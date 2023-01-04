@@ -5,7 +5,7 @@ public class LineComparison {
     static int y1=6;
     static int x2=8;
     static int y2=10;
-    public static void main(String[] args) {
+    static void Comparison(){
         System.out.println("Welcome to Line Comparison Computation");
         Integer length1 = (int) (Math.sqrt(Math.pow((x2-x1), 2)) + Math.sqrt(Math.pow((y2-y1), 2)) );
         System.out.println("Length of Line 1: " + length1);
@@ -17,12 +17,14 @@ public class LineComparison {
             System.out.println("Length of lines are equal");
         }else {
             System.out.println("Length of lines are  not equal");
-            if(length1 > length2){
+            if (length1 > length2) {
                 System.out.println("length of line 1 is greater than length of line 2");
-            } else if (length2 > length1){
+            } else if (length2 > length1) {
                 System.out.println("length of line 2 is greater than length of line 1");
             }
         }
-
+    }
+    public static void main(String[] args) {
+        Comparison();
     }
 }
